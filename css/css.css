@@ -99,6 +99,9 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding: 5%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+
   }
 
   .linkbox {
@@ -106,6 +109,14 @@ body {
     background-color: #ffdaab;
     border: 2px solid black;
     border-radius: 50%;
+  }
+
+  figure h2 {
+    text-align: center;
+  }
+
+  .linkbox img {
+    width: 100%;
   }
 
 
