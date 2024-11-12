@@ -1,6 +1,7 @@
 :root {
   --lysbla: #61b0b6;
   --gul: #f4d4a6;
+  --overfont: "dejavu-sans-condensed", serif;
 }
 
 * {
@@ -342,28 +343,46 @@ body {
 
 
   /*Styling af kontaktsiden*/
-  .overskrift {
+  .overskrift, .billedeOgTekst h3 {
     text-align: center;
+    font-family: serif;
   }
 
   .container {
     display: flex;
     border: 2px solid black;
-    gap: 4%;
-    padding-left: 6%;
   }
 
   .container2 {
     width: 20%;
     justify-content: stretch;
     border: 2px solid yellow;
+    margin: auto;
+
+  }
+
+  .billedeOgTekst h3, .billedeOgTekst p {
+    margin-top: 0px;
+    margin-bottom: 0px;
 
   }
 
   .container img {
     width: 50%;
+    margin: auto;
+    border: 2px solid blue;
+
+  }
+
+  .container2 img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border: 2px solid blue;
+
   }
 
   .billedeOgTekst {
     text-align: center;
+    border: 2px solid red;
   }
