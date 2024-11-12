@@ -16,6 +16,7 @@ header img{
     z-index: 1100;
 }
 
+
 #bigphoto{
     width: 100%;
     margin-top: -380px;
@@ -37,13 +38,18 @@ body {
     align-items: center;
   }
   
-  .navbar a {
+  .navbar .a, .dropdown {
     float: left;
     font-size: 16px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    width: 14%;
+  }
+
+  #headerbillede{
+    width: 100%; 
   }
   
   .dropdown {
@@ -92,6 +98,32 @@ body {
     display: block;
   }
 
+  .forsidelinks {
+    background-color: #fdc680;
+    height: 220px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+
+  }
+
+  .linkbox {
+    width: 20%;
+    background-color: #ffdaab;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+
+  figure h2 {
+    text-align: center;
+  }
+
+  .linkbox img {
+    width: 100%;
+  }
+
 
   footer{
     background-color: #017e8c;
@@ -118,6 +150,7 @@ body {
     background-color: #c37862;
     display: flex;
     justify-content: space-between;
+    padding: 1%;
   }
 
   .sponsor img{
@@ -216,3 +249,5 @@ body {
 
 
   /* her slutter EVENT css */
+    height: 100px;
+  }
