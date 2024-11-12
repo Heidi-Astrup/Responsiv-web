@@ -1,3 +1,8 @@
+:root {
+  --lysbla: #61b0b6;
+  --gul: #f4d4a6;
+}
+
 * {
     font-family: "dejavu-sans-condensed", sans-serif;
     font-weight: 400;
@@ -64,7 +69,7 @@ body {
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    color: black;
   }
   
   .dropdown-content {
@@ -93,19 +98,41 @@ body {
     display: block;
   }
 
+  /*afsnit med cirkler der linker til undersider*/
   .forsidelinks {
     background-color: #fdc680;
     height: 220px;
     display: flex;
     justify-content: space-evenly;
     padding: 5%;
-    margin-bottom: 10%;
-    margin-top: 10%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+
+  }
+
+  .forsidelinks nav {
+    border: 2px solid black;
+    text-align: center;
+    height: 130%;
+    align-content: end;
+
+
+  }
+
+  #id {
+    border: 2px solid black;
+    align-content: center;
+
+  }
+
+  .forsidelinks nav div {
+    border: 2px solid green;
 
   }
 
   .linkbox {
     width: 20%;
+    height: 100%;
     background-color: #ffdaab;
     border: 2px solid black;
     border-radius: 50%;
@@ -119,7 +146,59 @@ body {
     width: 100%;
   }
 
+  #kalenderIcon {
+    width: 60%;
+  }
 
+  #kontaktIcon {
+    width: 70%;
+  }
+
+  /*afsnit med tekst om klubben og runde billeder*/
+  .omKlubbenAfsnit {
+    width: 93%;
+    background-color: var(--lysbla);
+    display: flex;
+    padding: 2%;
+    padding-left: 5%;
+    padding-top: 5%;
+    justify-content: space-evenly;
+  }
+
+  .klubben {
+    width: 30%;
+  }
+
+  #ol {
+    margin-left: -1%;
+  }
+
+  #olImg {
+    width: 90%;
+
+  }
+
+  #rundBilleder {
+    margin-left: -8%;
+    margin-top: -4%;
+
+  }
+
+  #kammeratImg {
+    width: 60%;
+  }
+
+  #spilImg {
+    width: 90%;
+    margin-top: 7%;
+  }
+
+  .klubben img {
+    width: 50%;
+    border-radius: 100%;
+  }
+
+/*styling af footer*/
   footer{
     background-color: #017e8c;
     display: flex;
@@ -151,4 +230,32 @@ body {
   .sponsor img{
     width: auto;
     height: 100px;
+  }
+
+  /*Styling af kontaktsiden*/
+  .overskrift {
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    border: 2px solid black;
+    gap: 4%;
+    padding-left: 3%;
+  }
+
+  .container2 {
+    width: 20%;
+    justify-content: stretch;
+    border: 2px solid yellow;
+
+  }
+
+  .container img {
+    width: 50%;
+  }
+
+  .billedeOgTekst {
+    text-align: center;
   }
