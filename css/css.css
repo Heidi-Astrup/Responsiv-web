@@ -1,6 +1,7 @@
 :root {
   --lysbla: #61b0b6;
   --gul: #f4d4a6;
+  --lysrod: #eebeac;
   --overfont: "dejavu-sans-condensed", serif;
 }
 
@@ -25,6 +26,7 @@ header img{
 #bigphoto{
     width: 100%;
     margin-top: -380px;
+    margin-bottom: -7px;
     
 }
 
@@ -112,52 +114,38 @@ body {
     justify-content: space-evenly;
     padding: 5%;
     padding-bottom: 10%;
-    padding-top: 10%;
-
+    padding-top: 5%;
   }
+ 
 
-  .forsidelinks nav {
-    border: 2px solid black;
-    text-align: center;
-    height: 130%;
-    align-content: end;
-
-
-  }
-
-  #id {
-    border: 2px solid black;
-    align-content: center;
-
-  }
-
-  .forsidelinks nav div {
-    border: 2px solid green;
-
-  }
-
-  .linkbox {
-    width: 20%;
-    height: 100%;
+  .rund {
+    width: 250px;
+    height: 250px;
     background-color: #ffdaab;
-    border: 2px solid black;
     border-radius: 50%;
-  }
-
-  figure h2 {
     text-align: center;
+    align-content: center;
   }
 
-  .linkbox img {
-    width: 100%;
+  div h2 {
+    text-align: center;
+    margin-top: 2px;
+  }
+
+  div a {
+    text-decoration: none;
+  }
+
+  #kammeratIcon {
+    width: 70%;
   }
 
   #kalenderIcon {
-    width: 60%;
+    width: 45%;
   }
 
   #kontaktIcon {
-    width: 70%;
+    width: 50%;
   }
 
   /*afsnit med tekst om klubben og runde billeder*/
@@ -350,14 +338,17 @@ body {
 
   .container {
     display: flex;
-    border: 2px solid black;
+    margin-bottom: 2%;
+    width: 70%;
+    margin: auto;
+
   }
 
   .container2 {
     width: 20%;
     justify-content: stretch;
-    border: 2px solid yellow;
     margin: auto;
+    margin-bottom: 2%;
 
   }
 
@@ -368,21 +359,38 @@ body {
   }
 
   .container img {
-    width: 50%;
+    width: 100%;
     margin: auto;
-    border: 2px solid blue;
 
   }
 
   .container2 img {
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: auto;
-    border: 2px solid blue;
 
   }
 
   .billedeOgTekst {
     text-align: center;
-    border: 2px solid red;
   }
+
+  .container2 .stor {
+    width: 80%;
+  }
+
+  .farvesektion {
+    background: var(--lysrod);
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+  }
+
+  #plads {
+    margin-bottom: 6%;
+  }
+
+  #bestyrelse {
+    width: 90%;
+  }
+
+  
