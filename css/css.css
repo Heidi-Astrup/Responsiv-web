@@ -457,18 +457,26 @@ footer img {
     margin-left: 53%;
   }
 
+  .doubletekst {
+    text-align:left;
+  }
+
 .julefrokost {
     text-align: end;
     padding: 5px;
     margin-right: 53%;
-    margin-top: -766px;
+    margin-top: -700px;
+  }
+
+    .juletekst {
+    text-align:right;
   }
 
   .ligelinje {
-    margin-top: -45%;
+    margin-top: -40%;
     border: 1px;
     border-left: 2px solid rgb(255, 255, 255);
-    height: 450px; /* Set the height */
+    height: 400px; /* Set the height */
     transform: rotate(180deg); /* Rotate to make it vertical */
     position: relative;
   }
@@ -486,8 +494,8 @@ footer img {
     border-left: 2px solid rgb(255, 255, 255);
     height: 70px; /* Set the height */
     transform: rotate(135deg); /* Rotate to make it vertical */
-    margin-bottom: 987px;
-    margin-right: 51.7%;
+    margin-bottom: 940px;
+    margin-right: 3.3%;
   }
 
   .førsteskrå {
@@ -502,8 +510,8 @@ footer img {
     border-left: 2px solid rgb(255, 255, 255);
     height: 70px; /* Set the height */
     transform: rotate(45deg); /* Rotate to make it vertical */
-    margin-bottom: 999px;
-    margin-right: 48.2%;
+    margin-bottom: 955px;
+    margin-right: -3.3%;
   }
 
   .andenskrå {
@@ -546,15 +554,73 @@ footer img {
 
   .eventfacebookKasse {
     width: 30%;
-    height: 500px;
+    height: 100%;
     margin: auto;
-
   }
 
   .eventfacebook img {
     width: 100%;
-    max-height: 500px;
+    max-height: auto;
   }
+
+  /* styles for desktop devices */
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* styles for tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .event {
+    font-size: 14px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+/* styles for mobile devices */
+@media only screen and (max-width: 767px) {
+  body .event {
+    font-size: 12px;
+    width: 30%;
+    margin: 0;
+  }
+
+  .eventtekst, .julefrokost {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .tredeleipil {
+    display: none;
+  }
+
+  .eventfacebook {
+    display: flex;
+    margin-top: 100%;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10%;
+  }
+
+  .eventfacebook img {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .sodaklub {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 20%;
+  }
+}
 
 
 /*-----------------------------------------------Kontakt siden--------------------------------------------------------------------------*/
