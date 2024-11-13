@@ -109,12 +109,10 @@ body {
   /*afsnit med cirkler der linker til undersider*/
   .forsidelinks {
     background-color: #fdc680;
-    height: 220px;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     padding: 5%;
-    padding-bottom: 10%;
-    padding-top: 5%;
   }
  
 
@@ -150,10 +148,9 @@ body {
 
   /*afsnit med tekst om klubben og runde billeder*/
   .omKlubbenAfsnit {
-    width: 93%;
     background-color: var(--lysbla);
     display: flex;
-    padding: 2%;
+    padding: 20px;
     padding-left: 5%;
     padding-top: 5%;
     justify-content: space-evenly;
