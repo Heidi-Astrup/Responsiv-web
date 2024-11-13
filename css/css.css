@@ -1,3 +1,10 @@
+:root {
+  --lysbla: #61b0b6;
+  --gul: #f4d4a6;
+  --lysrod: #eebeac;
+  --overfont: "dejavu-sans-condensed", serif;
+}
+
 * {
   font-family: "dejavu-sans-condensed", sans-serif, 'Helvetica', 'sans-serif';
   font-weight: 400;
@@ -6,6 +13,28 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+    font-family: "dejavu-sans-condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+}
+
+header{
+    max-width: 100%; 
+    position: sticky;
+    top: 0;
+}
+header img{
+    width: 50%;
+    z-index: 1100;
+}
+
+
+#bigphoto{
+    width: 100%;
+    margin-top: -380px;
+    margin-bottom: -7px;
+    
 }
 
 body {
@@ -251,14 +280,139 @@ footer img {
       text-align: center;
       display: block;
       text-decoration: none;
+  .navbar .a, .dropdown {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 14%;
+  }
+
+  #headerbillede{
+    width: 100%; 
   }
   
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color: black;
+  }
+  
+
   .dropdown-content {
       position: relative;
   }
 
   .burger-menu {
       display: block;
+  /*afsnit med cirkler der linker til undersider*/
+  .forsidelinks {
+    background-color: #fdc680;
+    height: 220px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+    padding-bottom: 10%;
+    padding-top: 5%;
+  }
+ 
+
+  .rund {
+    width: 250px;
+    height: 250px;
+    background-color: #ffdaab;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+  }
+
+  .kasse h2 {
+    text-align: center;
+    margin-top: 2px;
+  }
+
+  .linkbox a {
+    text-decoration: none;
+  }
+
+  #kammeratIcon {
+    width: 70%;
+  }
+
+  #kalenderIcon {
+    width: 45%;
+  }
+
+  #kontaktIcon {
+    width: 50%;
+  }
+
+  /*afsnit med tekst om klubben og runde billeder*/
+  .omKlubbenAfsnit {
+    width: 93%;
+    background-color: var(--lysbla);
+    display: flex;
+    padding: 2%;
+    padding-left: 5%;
+    padding-top: 5%;
+    justify-content: space-evenly;
+  }
+
+  .klubben {
+    width: 30%;
+  }
+
+  #ol {
+    margin-left: -1%;
+  }
+
+  #olImg {
+    width: 90%;
+
+  }
+
+  #rundBilleder {
+    margin-left: -8%;
+    margin-top: -4%;
+
+  }
+
+  #kammeratImg {
+    width: 60%;
+  }
+
+  #spilImg {
+    width: 90%;
+    margin-top: 7%;
+  }
+
+  .klubben img {
+    width: 50%;
+    border-radius: 100%;
+  }
+
+/*styling af footer*/
+  footer{
+    background-color: #017e8c;
+    display: flex;
+    align-content: baseline;
+    padding: 5%;
   }
 
   /* Vis navbar når checkboxen er markeret */
@@ -266,3 +420,201 @@ footer img {
       display: flex;
   }
 }
+
+  .facebooklogo{
+    width: 30%;
+  }
+
+  footer img{
+    width: 40%;
+
+  }
+
+  .sponsor{
+    background-color: #c37862;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+  }
+
+  .sponsor img{
+    width: auto;
+    height: 100px;
+  }
+
+  /* her starter EVENT css */
+  .event {
+    background-color: #ffcc82;
+    margin: 0;
+    width: 100%;
+  }
+.turnering {
+    padding: 5px;
+    margin-left: 53%;
+  }
+
+.julefrokost {
+    text-align: end;
+    padding: 5px;
+    margin-right: 53%;
+    margin-top: -766px;
+  }
+
+  .ligelinje {
+    margin-top: -45%;
+    border: 1px;
+    border-left: 2px solid rgb(255, 255, 255);
+    height: 450px; /* Set the height */
+    transform: rotate(180deg); /* Rotate to make it vertical */
+    position: relative;
+  }
+
+  .eventlinje {
+    position: relative;
+    height: 100vh; /* Set to full height of viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skråførste {
+    border: 1px;
+    border-left: 2px solid rgb(255, 255, 255);
+    height: 70px; /* Set the height */
+    transform: rotate(135deg); /* Rotate to make it vertical */
+    margin-bottom: 987px;
+    margin-right: 51.7%;
+  }
+
+  .førsteskrå {
+    height: 1vh; /* Set to full height of viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skråanden {
+    border: 1px;
+    border-left: 2px solid rgb(255, 255, 255);
+    height: 70px; /* Set the height */
+    transform: rotate(45deg); /* Rotate to make it vertical */
+    margin-bottom: 999px;
+    margin-right: 48.2%;
+  }
+
+  .andenskrå {
+    height: 1vh; /* Set to full height of viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* css til at felt der indenholder klubtøj, sodavand og øl */
+
+  .sodaklub {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 40px;
+    margin-left: 7.4%;
+  }
+
+  .soda, .klub {
+    background-color: #c37862;
+    padding: 30px;
+    width: 40%;
+  }
+
+  .soda img, .klub img {
+    display: flex;
+    width: 100%;
+  }
+
+  .eventfacebook {
+    margin-top: 12%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 35px;
+    background: #61b0b6;
+  }
+
+  .eventfacebookKasse {
+    width: 30%;
+    height: 500px;
+    margin: auto;
+
+  }
+
+  .eventfacebook img {
+    width: 100%;
+    max-height: 500px;
+  }
+
+
+
+  /*Styling af kontaktsiden*/
+  .overskrift, .billedeOgTekst h3 {
+    text-align: center;
+    font-family: serif;
+  }
+
+  .container {
+    display: flex;
+    margin-bottom: 2%;
+    width: 70%;
+    margin: auto;
+
+  }
+
+  .container2 {
+    width: 20%;
+    justify-content: stretch;
+    margin: auto;
+    margin-bottom: 2%;
+
+  }
+
+  .billedeOgTekst h3, .billedeOgTekst p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+  }
+
+  .container img {
+    width: 100%;
+    margin: auto;
+
+  }
+
+  .container2 img {
+    width: 90%;
+    height: auto;
+    margin: auto;
+
+  }
+
+  .billedeOgTekst {
+    text-align: center;
+  }
+
+  .container2 .stor {
+    width: 80%;
+  }
+
+  .farvesektion {
+    background: var(--lysrod);
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+  }
+
+  #plads {
+    margin-bottom: 6%;
+  }
+
+  #bestyrelse {
+    width: 90%;
+  }
+
+  

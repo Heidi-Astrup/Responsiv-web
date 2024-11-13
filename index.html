@@ -1,67 +1,124 @@
 <!DOCTYPE html>
 <html lang="da">
-    <link rel="stylesheet" href="css/css.css">
+
 <head>
     <link rel="stylesheet" href="https://use.typekit.net/gkz8zog.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aarhus Bordtennis</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/css.css">
+
+
 </head>
 <body>
     <header>
         <div class="navbar">
-            <a href="#">Om klubben</a>
-            <a href="Hold.html">Hold</a>
-            <a href="#">Tilmelding</a>
-            <a href="index.html"><img src="/images/1x/Aktiv 5.png" alt="logo"></a>
-            <a href="Kampprogram.html">Kamp program</a>
-            <a href="Kontakt.html">Kontakt</a>
+            <a class="a" href="#">Om klubben</a>
+            <a class="a" href="Hold.html">Hold*</a>
+            <a class="a" href="#">Tilmelding</a>
+            <a class="a" href="index.html"><img id="headerbillede" src="/images/1x/Aktiv 5.png" alt="Aarhus bordtennis logo"></a>
+            <a class="a" href="Kampprogram.html">Kamp program*</a>
+            <a class="a" href="Kontakt.html">Kontakt*</a>
             <div class="dropdown">
-              <button class="dropbtn">Sammenhold 
+              <button class="dropbtn">Sammenhold* 
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdown-content">
                 <a href="#">Galleri</a>
-                <a href="#">Events</a>
+                <a href="Events.html">Events*</a>
               </div>
             </div> 
-          </div>
+        </div>
           
 
-</div>
 
     </header>
+
+
     <main>
-        <img src="images/BigPhotoBold.png" alt="bigphoto" id="bigphoto">
+        <img id="bigphoto" src="images/BigPhotoBold.png" alt="Forsidebillede med bordtennisbold med aarhusbordtennis logo">
+        
+        <nav class="forsidelinks">
+            <div class="linkbox">
+                <a href="Hold.html">
+                    <div class="kasse, rund">
+                        <img id="kammeratIcon" src="images/hold.png" alt="icon af hold kammerater">
+                    </div>
+                    <div class="kasse">
+                        <h2>HOLD</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="linkbox">
+                <a href="Kampprogram.html">
+                    <div class="kasse, rund">
+                        <img id="kalenderIcon" src="images/kalendericon.png" alt="Icon af kalender">
+                    </div>
+                    <div class="kasse">
+                        <h2>KAMP PROGRAM</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="linkbox">
+                <a href="Kontakt.html">
+                    <div class="kasse, rund">
+                        <img id="kontaktIcon" src="images/kontaktbog.png" alt="Icon af kontaktbog">
+                    </div>
+                    <div class="kasse">
+                        <h2>KONTAKT</h2>
+                    </div>
+                </a>
+            </div>
+        </nav>
+
+        <section class="omKlubbenAfsnit">
+            <article class="klubben">
+                <h2>Om klubben</h2>
+                <p>Aarhus Bordtennis er en klub med et stærkt fællesskab og en dyb passion for bordtennis. Vi tilbyder et trygt og støttende miljø, hvor både børn, unge og voksne kan udforske og udvikle deres potentiale. Vores mission er at skabe en inkluderende klub, hvor alle føler sig velkomne uanset alder, niveau eller ambitioner.</p>
+            </article>
+
+            <figure class="klubben" id="ol">
+                <img id="olImg" src="/images/bordtennis51.jpg" alt="">
+            </figure>
+
+            <figure class="klubben" id="rundBilleder">
+                <figure class="rundbillede">
+                    <img id="kammeratImg" src="/images/bordtennis48.jpg" alt="">
+                </figure>
+                <figure class="rundbillede">
+                    <img id="spilImg" src="/images/bordtennis22.jpg" alt="">
+                </figure>
+            </figure>
+        </section>
+
+
     </main>
     
 
 
 
+    <aside class="sponsor">
+        <img src="images/btex.jpg" alt="Bordtenniseksperterne | Logo">
+        <img src="/images/jtlogo.png" alt="Jan Therkelsen Agenturer | Funiture4ever | Logo">
+        <img src="/images/logo3.webp" alt="Stoltenberg Auto Risskov | Logo">
+        <img src="/images/tømerlogo.jpg" alt="Tømermester Steen Hvid | Logo">
+    </aside>
 
 
-
-
-
-
-
-
-
-
-
-<aside class="sponsor">Sponsorer
-    <img src="/images/jtlogo.png" alt="jtlogo">
-    <img src="/images/logo3.webp" alt="logo3">
-    <img src="/images/tømerlogo.jpg" alt="tomrer">
-    <img src="images/btex.jpg" alt="btex">
-</aside>
     <footer>
-    <div class="footertekst">
-<h2>Find os her:</h2>
-<p>Ellehøjskolen<br>Jernaldervej 5, 8210 Aarhus V</p>
-<p>Følg med i de seneste nyheder på vores facebookside</p>
-</div>
-<div class="facebooklogo"><img src="/images/fb.svg" alt="facebooklogo"></div>
+        <div class="footertekst">
+            <h2>Find os her:</h2>
+            <p>Ellehøjskolen<br>Jernaldervej 5, 8210 Aarhus V</p>
+            <p>Følg med i de seneste nyheder på vores facebookside</p>
+        </div>
+        <div class="facebooklogo">
+            <img src="/images/fb.svg" alt="Facebook logo">
+        </div>
     </footer>
 </body>
 </html>
