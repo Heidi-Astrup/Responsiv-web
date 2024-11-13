@@ -23,9 +23,10 @@ header{
     max-width: 100%; 
     position: sticky;
     top: 0;
+
 }
 header img{
-    width: 50%;
+    width: 80%;
     z-index: 1100;
 }
 
@@ -45,16 +46,6 @@ body {
   width: 100%;
 }
 
-header {
-  max-width: 100%; 
-  position: sticky;
-  top: 0;
-  background-color: #017e8c;
-}
-
-header img {
-  width: 50%;
-}
 
 .navbar {
   overflow: hidden;
@@ -62,19 +53,20 @@ header img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
 }
 
-.navbar a {
+.navbar a, .dropdown {
   font-size: 16px;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  width: 14%;
+  border: 2px solid black;
 }
 
-.dropdown {
-  overflow: hidden;
-}
+
 
 .dropdown .dropbtn {
   font-size: 16px;  
@@ -87,7 +79,7 @@ header img {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #FFCC82;
+  color: black;
 }
 
 .dropdown-content {
@@ -273,7 +265,7 @@ footer img {
       left: 0;
       z-index: 1;
   }
-  }
+  
 
   .navbar a {
       padding: 15px;
@@ -281,6 +273,8 @@ footer img {
       text-align: center;
       display: block;
       text-decoration: none;
+  }
+
   .navbar .a, .dropdown {
     float: left;
     font-size: 16px;
@@ -290,7 +284,7 @@ footer img {
     text-decoration: none;
     width: 14%;
   }
-  }
+  
 
   #headerbillede{
     width: 100%; 
@@ -323,6 +317,14 @@ footer img {
 
   .burger-menu {
       display: block;}
+
+   /* Vis navbar når checkboxen er markeret */
+   .burger-toggle:checked + .burger-menu + .navbar {
+    display: flex;
+  }
+
+  }
+
   /*afsnit med cirkler der linker til undersider*/
   .forsidelinks {
     background-color: #fdc680;
@@ -417,11 +419,6 @@ footer img {
     padding: 5%;
   }
 
-  /* Vis navbar når checkboxen er markeret */
-  .burger-toggle:checked + .burger-menu + .navbar {
-      display: flex;
-  }
-}
 
   .facebooklogo{
     width: 30%;
