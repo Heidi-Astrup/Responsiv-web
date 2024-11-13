@@ -9,14 +9,14 @@
   font-family: "dejavu-sans-condensed", sans-serif, 'Helvetica', 'sans-serif';
   font-weight: 400;
   font-style: normal;
-  color: #000000;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-    font-family: "dejavu-sans-condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #000000;
+}
+
+main {
+  color: #ffffff;
+
 }
 
 header{
@@ -63,7 +63,6 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   width: 14%;
-  border: 2px solid black;
 }
 
 
@@ -107,13 +106,14 @@ body {
   display: block;
 }
 
-/*-------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------Hold siden--------------------------------------------------------------------------*/
 .main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 2%;
   max-width: 100%;
+  color: #000000;
 }
 
 .ungdom, .senior {
@@ -325,6 +325,8 @@ footer img {
 
   }
 
+  /*-----------------------------------------------Forsiden--------------------------------------------------------------------------*/
+
   /*afsnit med cirkler der linker til undersider*/
   .forsidelinks {
     background-color: #fdc680;
@@ -354,6 +356,7 @@ footer img {
 
   .linkbox a {
     text-decoration: none;
+    color: #ffffff;
   }
 
   #kammeratIcon {
@@ -440,6 +443,8 @@ footer img {
     width: auto;
     height: 100px;
   }
+
+  /*-----------------------------------------------Events siden--------------------------------------------------------------------------*/
 
   /* her starter EVENT css */
   .event {
@@ -552,11 +557,16 @@ footer img {
   }
 
 
+/*-----------------------------------------------Kontakt siden--------------------------------------------------------------------------*/
 
   /*Styling af kontaktsiden*/
   .overskrift, .billedeOgTekst h3 {
     text-align: center;
     font-family: serif;
+  }
+
+  .overskrift {
+    margin-top: 3%;
   }
 
   .container {
