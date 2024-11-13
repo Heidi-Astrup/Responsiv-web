@@ -1,123 +1,268 @@
 * {
-    font-family: "dejavu-sans-condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #ffff;
-}
-
-header{
-    max-width: 100%; 
-    position: sticky;
-    top: 0;
-}
-header img{
-    width: 50%;
-}
-#bigphoto{
-    width: 100%;
-    margin-top: -380px;
-    
+  font-family: "dejavu-sans-condensed", sans-serif, 'Helvetica', 'sans-serif';
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #017e8c;
-    margin: 0;
-    width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #017e8c;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header {
+  max-width: 100%; 
+  position: sticky;
+  top: 0;
+  background-color: #017e8c;
+}
+
+header img {
+  width: 50%;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar a {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #FFCC82;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2%;
+  max-width: 100%;
+}
+
+.ungdom, .senior {
+  background-color: #ffffff;
+  padding: 2%;
+  max-width: 800px; 
+  width: 100%; 
+  font-size: 1rem;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.ungdom img, .senior img {
+  width: 600px; 
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  max-width: 100%; 
+}
+
+.sponsor {
+  background-color: #c37862;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.sponsor img {
+  width: auto;
+  height: 125px;
+  margin: 5px;
+}
+
+footer {
+  background-color: #017e8c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5%;
+  flex-wrap: wrap; /* Gør det responsivt */
+}
+
+.footertekst {
+  width: 70%;
+}
+
+.facebooklogo {
+  width: 30%;
+  text-align: center;
+}
+
+footer img {
+  width: 40%;
+  max-width: 150px; 
+
+
+}
+
+/*HER STARTES @MEDIA-STYLINGEN*/
+
+/* Responsiv styling tablet */
+@media (max-width: 1024px) {
+  .footertekst, .facebooklogo {
+      width: 100%; /* Fylder hele bredden på tablet størrelseN */
+      text-align: center;
+  }
+
+  .ungdom, .senior {
+      max-width: 500px;
+      padding: 4%; 
   }
   
+  header img {
+      width: 40%;
+  }
+
+  .ungdom img, .senior img {
+      width: 100%; 
+  }
+}
+
+/* Responsiv styling mobil */
+@media (max-width: 768px) {
   .navbar {
-    overflow: hidden;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+      flex-direction: column;
   }
   
+  .navbar a, .dropdown .dropbtn {
+      font-size: 14px;
+      padding: 10px 12px;
+  }
+
+  .main {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .ungdom, .senior {
+      max-width: 100%; 
+      padding: 3%;
+  }
+
+  footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footertekst, .facebooklogo {
+      width: 100%;
+  }
+
+  .sponsor img {
+      width: 100px;
+      height: auto; 
+  }
+}
+
+
+/*BURGER MENU - TO USE OR NOT?/ LIGENU OVERWRITER DEN NEMLIG LOGO MEDMINDRE BURGEREN KLIKKES PÅ */
+
+
+/* Skjul checkbox */
+.burger-toggle {
+  display: none;
+}
+
+/* Burger-menu ikon styling */
+.burger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Mobil & TABLET m burgerrr */ 
+@media (max-width: 768px) {
+  /* Skjul navbar på små skærme */
+  .navbar {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #017e8c;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+  }
+
   .navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+      padding: 15px;
+      color: white;
+      text-align: center;
+      display: block;
+      text-decoration: none;
   }
   
   .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
+      position: relative;
   }
 
-
-  footer{
-    background-color: #017e8c;
-    display: flex;
-    align-content: baseline;
-    padding: 5%;
+  .burger-menu {
+      display: block;
   }
 
-
-  .footertekst{
-    width: 70%;
+  /* Vis navbar når checkboxen er markeret */
+  .burger-toggle:checked + .burger-menu + .navbar {
+      display: flex;
   }
-
-  .facebooklogo{
-    width: 30%;
-  }
-
-  footer img{
-    width: 40%;
-
-  }
-
-  .sponsor{
-    background-color: #c37862;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .sponsor img{
-    width: auto;
-    height: 125px;
-  }
+}
