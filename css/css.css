@@ -285,6 +285,7 @@ footer img {
   /*-----------------------------------------------Forsiden--------------------------------------------------------------------------*/
 
   /*afsnit med cirkler der linker til undersider*/
+  .forsidelinks {
     background-color: #fdc680 !important;
     height: 100%;
     display: flex;
@@ -294,7 +295,6 @@ footer img {
     padding-bottom: 10%;
     padding-top: 5%;
     border: 2px solid green;
-    
   }
  
 
@@ -320,7 +320,6 @@ footer img {
 
   .linkbox {
     display: flex;
-
   }
 
   .linkbox a {
@@ -1241,6 +1240,14 @@ footer img {
   width: 50%;
 }
 
+.linkbox {
+  justify-content: center;
+}
+
+.linkbox h2 {
+  font-size: large;
+}
+
 .rundBillede {
   display: none;
 }
@@ -1256,11 +1263,10 @@ figure {
   unicode-bidi: isolate;
 }
 
-/* sæt til igen når det virker på pc
   .forsidelinks {
     flex-direction: column;
+    justify-content: center;
   }
-    */
 
   .omKlubbenAfsnit {
     flex-direction: column;
