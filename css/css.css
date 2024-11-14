@@ -178,8 +178,6 @@ footer img {
 
 }
 
-<<<<<<< Updated upstream
-=======
 /*HER STARTES @MEDIA-STYLINGEN*/
 
 /* Responsiv styling mobil */
@@ -244,7 +242,6 @@ footer img {
 
 
 /*BURGER MENU - TO USE OR NOT?/ LIGENU OVERWRITER DEN NEMLIG LOGO MEDMINDRE BURGEREN KLIKKES PÅ */
->>>>>>> Stashed changes
 
 
 /* Skjul checkbox */
@@ -268,9 +265,6 @@ footer img {
     display: flex;
   }
 
-<<<<<<< Updated upstream
-
-=======
   @media (min-width: 1024) {
     .ungdom, .senior{ 
       max-width: none;
@@ -285,24 +279,26 @@ footer img {
   }
   
   
->>>>>>> Stashed changes
     
   
 
   /*-----------------------------------------------Forsiden--------------------------------------------------------------------------*/
 
   /*afsnit med cirkler der linker til undersider*/
-  .forsidelinks {
-    background-color: #fdc680;
+  div .forsidelinks {
+    background-color: #fdc680 !important;
     height: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     padding: 5%;
     padding-bottom: 10%;
     padding-top: 5%;
+    border: 2px solid green;
     
   }
  
+
 
   .rund {
     width: 250px;
@@ -311,16 +307,27 @@ footer img {
     border-radius: 50%;
     text-align: center;
     align-content: center;
+    margin: auto;
+    border: 2px solid yellow;
+
   }
 
   .kasse h2 {
     text-align: center;
     margin-top: 2px;
+    border: 2px solid rgb(130, 238, 213);
+
+  }
+
+  .linkbox {
+    display: flex;
+
   }
 
   .linkbox a {
     text-decoration: none;
     color: #ffffff;
+    border: 2px solid red;
   }
 
   #kammeratIcon {
@@ -706,69 +713,7 @@ footer img {
 */
 
   
-#bigphoto {
-    margin-top: 0;
-    width: 100%;
-    height: 244px;
-    object-fit: cover;
-  }
 
-.rund {
-    width: 150px;
-    height: 150px;
-    background-color: #ffdaab;
-    border-radius: 50%;
-    text-align: center;
-    align-content: center;
-    margin: auto;
-}
-
-#rundBilleder {
-  margin-left: 30%;
-  width: 80%;
-}
-
-#kammeratImg {
-  margin-top: 10%;
-  margin-left: -35%;
-  width: 70%;
-}
-
-#spilImg {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0%;
-  width: 90%;
-}
-
-#olImg {
-  margin-top: 0%;
-  margin-left: 50%;
-  width: 50%;
-}
-
-.rundBillede {
-  display: none;
-}
-
-.klubben {
-  font-size: 15px;
-  width: 100%;
-  margin-top: 5%;
-}
-
-figure {
-  display: block;
-  unicode-bidi: isolate;
-}
-
-  .forsidelinks {
-    flex-direction: column;
-  }
-
-  .omKlubbenAfsnit {
-    flex-direction: column;
-  }
 
 
 
@@ -776,14 +721,6 @@ figure {
 
 
 /*----------------------HER STARTES @MEDIA-STYLINGEN------------------*/
-  /* styles for desktop devices */
-  @media only screen and (min-width: 992px) {
-    body {
-      font-size: 16px;
-      width: 80%;
-      margin: auto;
-    }
-  }
   
   /* styles for tablet devices */
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -817,6 +754,8 @@ figure {
   
   /* styles for mobile devices */
   @media only screen and (max-width: 767px) {
+    
+
     body .event {
       font-size: 12px;
       width: 30%;
@@ -850,6 +789,7 @@ figure {
       height: 244px;
       object-fit: cover;
     }
+    
     .rund {
       width: 150px;
       height: 150px;
@@ -1266,4 +1206,64 @@ figure {
   #bestyrelse .container2 {
     margin-bottom: 10%;
   }
+
+
+.rund {
+    width: 150px;
+    height: 150px;
+    background-color: #ffdaab;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+}
+
+#rundBilleder {
+  margin-left: 30%;
+  width: 80%;
+}
+
+#kammeratImg {
+  margin-top: 10%;
+  margin-left: -35%;
+  width: 70%;
+}
+
+#spilImg {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0%;
+  width: 90%;
+}
+
+#olImg {
+  margin-top: 0%;
+  margin-left: 50%;
+  width: 50%;
+}
+
+.rundBillede {
+  display: none;
+}
+
+.klubben {
+  font-size: 15px;
+  width: 100%;
+  margin-top: 5%;
+}
+
+figure {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+/* sæt til igen når det virker på pc
+  .forsidelinks {
+    flex-direction: column;
   }
+    */
+
+  .omKlubbenAfsnit {
+    flex-direction: column;
+  }
+}
