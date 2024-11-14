@@ -121,7 +121,7 @@ body {
 .ungdom, .senior {
   background-color: #ffffff;
   padding: 2%;
-  max-width: 900px; 
+  max-width: 100%;
   width: 100%; 
   font-size: 1rem;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
@@ -129,7 +129,7 @@ body {
 
 
 .ungdom img, .senior img {
-  width: 600px; 
+  width: 900px; 
   height: auto;
   display: flex;
   justify-content: center;
@@ -219,7 +219,7 @@ footer img {
 
 
 /* Responsiv styling tablet */
-@media (max-width: 1024px) {
+@media (min-width: 600px),(max-width: 1024px) {
   .footertekst, .facebooklogo {
       width: 100%; /* Fylder hele bredden på tablet */
       text-align: center;
@@ -238,7 +238,6 @@ footer img {
       width: 100%; 
   }
 }
-
 
 
 /*BURGER MENU - TO USE OR NOT?/ LIGENU OVERWRITER DEN NEMLIG LOGO MEDMINDRE BURGEREN KLIKKES PÅ */
@@ -315,6 +314,9 @@ footer img {
     display: flex;
   }
 
+  @media (min-width: 1024) {
+  }
+    
   
 
   /*-----------------------------------------------Forsiden--------------------------------------------------------------------------*/
