@@ -678,6 +678,7 @@ footer img {
     width: 80%;
   }
 
+  /*Baggrundsfarve på nogle af holdene*/
   .farvesektion {
     background: var(--lysrod);
     padding-top: 0.3%;
