@@ -1255,11 +1255,7 @@ figure {
   unicode-bidi: isolate;
 }
 
-/* sæt til igen når det virker på pc
-  .forsidelinks {
-    flex-direction: column;
-  }
-    */
+  
 
   .omKlubbenAfsnit {
     flex-direction: column;
