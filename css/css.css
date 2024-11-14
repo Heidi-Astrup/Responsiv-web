@@ -606,7 +606,7 @@ footer img {
   }
 
   .scroll-container {
-    display: hidden;
+    display: none;
   }
 
   .eventfacebook {
