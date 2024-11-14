@@ -27,7 +27,7 @@ header{
 
 }
 header img{
-    width: 80%;
+    width: 100%;
     z-index: 1100;
 }
 
@@ -122,8 +122,9 @@ body {
   background-color: #ffffff;
   padding: 2%;
   max-width: 100%;
-  width: 100%; 
+  width: 100%;
   font-size: 1rem;
+  box-sizing: border-box;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -177,6 +178,73 @@ footer img {
 
 }
 
+<<<<<<< Updated upstream
+=======
+/*HER STARTES @MEDIA-STYLINGEN*/
+
+/* Responsiv styling mobil */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+  }
+  
+  .navbar a, .dropdown .dropbtn {
+      font-size: 14px;
+      padding: 10px 12px;
+      
+  }
+
+  .main {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .ungdom, .senior {
+      max-width: 100%; 
+      padding: 3%;
+  }
+
+  footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footertekst, .facebooklogo {
+      width: 100%;
+  }
+
+  .sponsor img {
+      width: 100px;
+      height: auto; 
+  }
+}
+
+
+/* Responsiv styling tablet */
+@media (min-width: 600px),(max-width: 1024px) {
+  .footertekst, .facebooklogo {
+      width: 100%; /* Fylder hele bredden på tablet */
+      text-align: center;
+  }
+
+  .ungdom, .senior {
+      max-width: 800px;
+      padding: 4%; 
+  }
+  
+  header img {
+      width: 80%;
+  }
+
+  .ungdom img, .senior img {
+      width: 100%; 
+  }
+}
+
+
+/*BURGER MENU - TO USE OR NOT?/ LIGENU OVERWRITER DEN NEMLIG LOGO MEDMINDRE BURGEREN KLIKKES PÅ */
+>>>>>>> Stashed changes
 
 
 /* Skjul checkbox */
@@ -200,7 +268,24 @@ footer img {
     display: flex;
   }
 
+<<<<<<< Updated upstream
 
+=======
+  @media (min-width: 1024) {
+    .ungdom, .senior{ 
+      max-width: none;
+      width: 90%;
+      padding: 2%;
+    margin:0 auto; }
+
+    
+      .ungdom img, .senior img {
+        width: 100%; 
+    }
+  }
+  
+  
+>>>>>>> Stashed changes
     
   
 
