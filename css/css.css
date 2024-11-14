@@ -285,7 +285,6 @@ footer img {
   /*-----------------------------------------------Forsiden--------------------------------------------------------------------------*/
 
   /*afsnit med cirkler der linker til undersider*/
-  div .forsidelinks {
     background-color: #fdc680 !important;
     height: 100%;
     display: flex;
