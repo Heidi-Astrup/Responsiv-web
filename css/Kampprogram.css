@@ -346,6 +346,22 @@ body {
   display: none;
 }
 
+#logoo {
+  display: none;
+}
+
+#vek1 {
+  display: none;
+}
+
+#vek2 {
+  display: none;
+}
+
+.icon {
+  display: block;
+}
+
 /* Kampprogram responsiv */
 @media (max-width: 600px) {
 
@@ -481,6 +497,23 @@ body {
     display: block;
     width: 20%;
     
+  }
+
+  .icon {
+    border: 2px solid blueviolet;
+    width: 40%;
+  }
+
+  #logoo {
+    display: contents;
+  }
+
+  #logoo img {
+    width: 30%;
+  }
+
+  #gem {
+    display: none;
   }
 }
 
@@ -838,4 +871,12 @@ body {
 .tekst3 {
   padding-left: 170px;
 } 
+
+.icon {
+  display: none;
+}
+
+header .icon {
+  display: none !important;
+}
 }
