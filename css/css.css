@@ -152,7 +152,7 @@ body {
 
 .sponsor img {
   width: auto;
-  height: 125px;
+  height: 110px;
   margin: 5px;
 }
 
@@ -177,7 +177,7 @@ footer {
 
 footer img {
   width: 40%;
-  max-width: 150px; 
+  max-width: 130px; 
 
 
 }
@@ -411,9 +411,11 @@ footer img {
     display: flex;
     justify-content: space-evenly;
     margin: auto;
-  .doubletekst {
-    text-align:left;
-  }
+  
+}
+
+.doubletekst {
+  text-align:left;
 }
 
 .julefrokost {
@@ -494,14 +496,6 @@ footer img {
     width: 14%;
   }
 
-  .skråførste {
-    border: 1px;
-    border-left: 2px solid rgb(255, 255, 255);
-    height: 70px; /* Set the height */
-    transform: rotate(135deg); /* Rotate to make it vertical */
-    margin-bottom: 940px;
-    margin-right: 3.3%;
-  }
 
   .topnav a {
     color: #ffffff;
@@ -511,14 +505,7 @@ footer img {
 
   .topnav a .icon {
     color: #000000;
-  .skråanden {
-    border: 1px;
-    border-left: 2px solid rgb(255, 255, 255);
-    height: 70px; /* Set the height */
-    transform: rotate(45deg); /* Rotate to make it vertical */
-    margin-bottom: 955px;
-    margin-right: -3.3%;
-  }
+
 }
 
   .dropdown .dropbtn {
