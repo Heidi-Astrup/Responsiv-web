@@ -159,16 +159,16 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   padding: 5%;
-  flex-wrap: wrap; /* Gør det responsivt */
+  flex-wrap:nowrap; /* Gør det responsivt */
 }
 
 .footertekst {
-  width: 70%;
+  display: block;
 }
 
 .facebooklogo {
   width: 30%;
-  text-align: center;
+  align-items: end;
 }
 
 footer img {
@@ -379,36 +379,6 @@ footer img {
   .klubben img {
     width: 50%;
     border-radius: 100%;
-  }
-
-/*styling af footer*/
-  footer{
-    background-color: #017e8c;
-    display: flex;
-    align-content: baseline;
-    padding: 5%;
-  }
-
-
-  .facebooklogo{
-    width: 30%;
-  }
-
-  footer img{
-    width: 40%;
-
-  }
-
-  .sponsor{
-    background-color: #c37862;
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
-  }
-
-  .sponsor img{
-    width: auto;
-    height: 100px;
   }
 
   /*-----------------------------------------------Events siden--------------------------------------------------------------------------*/
