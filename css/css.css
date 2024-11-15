@@ -29,7 +29,6 @@ header{
 header img{
     width: 100%;
     z-index: 1100;
-    border: 2px solid blueviolet;
 }
 
 
@@ -493,7 +492,6 @@ footer img {
     font-size: 17px;
     font-family: var(--font);
     width: 14%;
-    border: 2px solid yellow;
   }
 
   .skråførste {
@@ -936,7 +934,6 @@ footer img {
     display: block;
     width: 100%;
     align-content: center;
-    border: 2px solid red;
   }
 
   .topnav a {
@@ -968,13 +965,11 @@ footer img {
   }
 
   .icon {
-    border: 2px solid blueviolet;
     width: 40%;
 
   }
 
   .fa {
-    border: 2px solid blue;
     color: #000000;
   }
 
