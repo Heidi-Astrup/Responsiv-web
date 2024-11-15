@@ -15,22 +15,38 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <a class="a" href="#">Om klubben</a>
-            <a class="a" href="Hold.html">Hold*</a>
-            <a class="a" href="#">Tilmelding</a>
-            <a class="a" href="index.html"><img id="headerbillede" src="/images/1x/logo.png" alt="Aarhus bordtennis logo"></a>
-            <a class="a" href="Kampprogram.html">Kamp program*</a>
-            <a class="a" href="Kontakt.html">Kontakt*</a>
-            <div class="dropdown">
-              <button class="dropbtn">Sammenhold* 
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Galleri</a>
-                <a href="Events.html">Events*</a>
-              </div>
-            </div> 
-        </div>
+        <nav class="topnav" id="myTopnav">
+            <div class="topnav">
+                <a href="index.html" id="logoo">
+                    <img src="/images/1x/logo.png" alt="logo">
+                </a>
+                <a href="eve.html">Om klubben</a>
+                <a href="Hold.html">Hold*</a>
+                <a href="#">Tilmelding</a>
+                <a id="gem" href="index.html"><img src="/images/1x/logo.png" alt="logo"></a>
+                <a href="Kampprogram.html">Kamp program*</a>
+                <a href="Kontakt.html">Kontakt*</a>
+                <a id="vek1" href="#">Galleri</a>
+                <a id="vek2" href="Events.html">Events*</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Sammenhold* 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <div>
+                        <a href="#">Galleri</a>
+                        </div>
+                        <div>
+                        <a href="eve.html">Events*</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars fa-3x"></i>
+                </a>
+                  
+            </div>  
+        </nav>
           
 
 
@@ -379,5 +395,9 @@
             <img src="/images/fb.svg" alt="Facebook logo">
         </div>
     </footer>
+
+
+    <script src="js/js.js"></script>
+
 </body>
 </html>
