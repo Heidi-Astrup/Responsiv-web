@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+:root {
+  --lysbla: #61b0b6;
+  --blaa: #007e8c;
+  --gul: #f4d4a6;
+  --lysrod: #eebeac;
+  --overfont: "Racing Sans One", sans-serif;
+  --font: "dejavu-sans-condensed", sans-serif, 'Helvetica', 'sans-serif';
+}
+
 * {
     font-family: "dejavu-sans-condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+h1, h2, h3 {
+  font-family: var(--overfont);
 }
 
 header{
